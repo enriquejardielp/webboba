@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
           church: {
             title: "NOS CASAMOS AQUÍ",
             time: "13 de Septiembre 2025 · 12:00",
-            mapUrl: "https://maps.google.com/maps?q=iglesia+collbat%C3%B3&output=embed"
+            mapUrl: "https://maps.google.com/maps?q=https://maps.app.goo.gl/kRf2xXYvWMr4b6bs7&output=embed"
           },
           restaurant: {
             title: "CELEBRACIÓN",
             time: "Restaurante · 14:30",
-            mapUrl: "https://maps.google.com/maps?q=els+4+vents&output=embed"
+            mapUrl: "https://maps.google.com/maps?q=https://maps.app.goo.gl/MZmUCn91GQZxh1TG7&output=embed"
           }
         },
         texts: {
