@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
           mainPhoto: "fotoboda.JPEG",
           churchPhoto: "fotoiglesia.JPEG",
           restaurantPhoto: "fotorestaurante.JPEG"
-=======
   fetch('/data.json')
     .then(response => {
       if (!response.ok) throw new Error('Error al cargar datos');
@@ -35,26 +34,18 @@ document.addEventListener('DOMContentLoaded', function() {
           mainPhoto: "/assets/fotoboda.JPEG",
           churchPhoto: "/assets/fotoiglesia.JPEG",
           restaurantPhoto: "/assets/fotorestaurante.JPEG"
->>>>>>> Stashed changes
         },
         locations: {
           church: {
             title: "NOS CASAMOS AQUÍ",
             time: "13 de Septiembre 2025 · 12:00",
-<<<<<<< Updated upstream
             mapUrl: "https://maps.google.com/maps?q=iglesia+collbat%C3%B3&output=embed"
-=======
-            mapUrl: "https://maps.google.com/maps?q=https://maps.app.goo.gl/kRf2xXYvWMr4b6bs7&output=embed"
->>>>>>> Stashed changes
+          
           },
           restaurant: {
             title: "CELEBRACIÓN",
             time: "Restaurante · 14:30",
-<<<<<<< Updated upstream
             mapUrl: "https://maps.google.com/maps?q=els+4+vents&output=embed"
-=======
-            mapUrl: "https://maps.google.com/maps?q=https://maps.app.goo.gl/MZmUCn91GQZxh1TG7&output=embed"
->>>>>>> Stashed changes
           }
         },
         texts: {
@@ -91,9 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
       restaurantImage: document.getElementById('restaurant-image')
     };
 
-<<<<<<< Updated upstream
+
     // 1. Cargar textos desde JSON
-=======
     // 1. Cargar textos
 >>>>>>> Stashed changes
     elements.mainTitle.textContent = data.texts.mainTitle;
@@ -104,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
     elements.restaurantTitle.textContent = data.locations.restaurant.title;
     elements.restaurantTime.textContent = data.locations.restaurant.time;
 
-<<<<<<< Updated upstream
     // 2. Configurar imágenes con manejo de errores
     const loadImage = (element, src, isBackground = true) => {
       return new Promise((resolve) => {
@@ -175,7 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (scrollPosition < windowHeight * 1.8) {
         elements.restaurantSection.classList.remove('show-section');
       }
-=======
     // 2. Configurar imágenes
     const loadImage = (element, src) => {
       const img = new Image();
@@ -210,7 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
       else elements.churchSection.classList.remove('show-section');
       if (scrollPos > winHeight * 2.2) elements.restaurantSection.classList.add('show-section');
       else if (scrollPos < winHeight * 1.8) elements.restaurantSection.classList.remove('show-section');
->>>>>>> Stashed changes
     });
 
     // 5. Cuenta regresiva
@@ -225,7 +212,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       
-<<<<<<< Updated upstream
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -235,7 +221,6 @@ document.addEventListener('DOMContentLoaded', function() {
       elements.hoursElement.textContent = hours.toString().padStart(2, '0');
       elements.minutesElement.textContent = minutes.toString().padStart(2, '0');
       elements.secondsElement.textContent = seconds.toString().padStart(2, '0');
-=======
       const days = Math.floor(distance / (86400000)).toString().padStart(2, '0');
       const hours = Math.floor((distance % 86400000) / 3600000).toString().padStart(2, '0');
       const minutes = Math.floor((distance % 3600000) / 60000).toString().padStart(2, '0');
@@ -245,18 +230,14 @@ document.addEventListener('DOMContentLoaded', function() {
       elements.hoursElement.textContent = hours;
       elements.minutesElement.textContent = minutes;
       elements.secondsElement.textContent = seconds;
->>>>>>> Stashed changes
     }
     
     updateCountdown();
     const countdownInterval = setInterval(updateCountdown, 1000);
-<<<<<<< Updated upstream
 
     // 6. Inicialización final
     setTimeout(() => {
       elements.photoContainer.style.opacity = 1;
     }, 100);
-=======
->>>>>>> Stashed changes
   }
 });
