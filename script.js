@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Cargar datos JSON
-<<<<<<< Updated upstream
   fetch('data.json')
     .then(response => {
       if (!response.ok) {
