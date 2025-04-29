@@ -1,0 +1,25 @@
+{
+  "weddingDate": "September 13, 2025 12:00:00 GMT+0200",
+  "images": {
+    "mainPhoto": "fotoboda.JPEG",
+    "churchPhoto": "fotoiglesia.JPEG",
+    "restaurantPhoto": "fotorestaurante.JPEG"
+  },
+  "locations": {
+    "church": {
+      "title": "NOS CASAMOS AQUÍ",
+      "time": "13 de Septiembre 2025 · 12:00",
+      "mapUrl": "https://maps.google.com/maps?q=https://maps.app.goo.gl/kRf2xXYvWMr4b6bs7&output=embed"
+    },
+    "restaurant": {
+      "title": "CELEBRACIÓN",
+      "time": "Restaurante · 14:30",
+      "mapUrl": "https://maps.google.com/maps?q=https://maps.app.goo.gl/MZmUCn91GQZxh1TG7&output=embed"
+    }
+  },
+  "texts": {
+    "mainTitle": "Nos Casamos",
+    "invitationText": "Con gran alegría queremos compartir este momento especial con ustedes",
+    "rsvpText": "Confirmar Asistencia"
+  }
+}
